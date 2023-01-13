@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            width: 400px;
+            height: 400px;
+            background: papayawhip;
+            /*fr es una nueva medida que trata de porciones, es decir la torta completa 
+                si pongo 4 fr, se parte en 4 porciones iguales*/
+            /*nos permite decirle cuantas columnas llevara nuestra grid, */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /*nos permite decirle cuantas filas llevara nuestra grid*/
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        }
+        .item{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    
+</body>
+</html>

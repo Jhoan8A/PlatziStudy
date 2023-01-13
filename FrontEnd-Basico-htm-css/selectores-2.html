@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* selecciona los hijos y de ahi para abajo*/
+        div p {
+            color: lime;
+        }
+        /*Selecciona solo al hijo directo no a los hijos del hijo*/
+        div > div{
+            background: gainsboro;
+        }
+
+        .nieto{
+            background: green;
+        }
+        /*Se lecciona objetos adyacentes o el que esta seguido al mismo nivel*/
+        div + section {
+            background: red;
+        }
+        div ~ p {
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p>
+                Aja
+            </p> 
+            <p>
+                Pillado
+                <p>Prueba hijo del hijo</p>
+            </p>
+            <div class="nieto">SOY EL DIV NIETO</div>
+        </div>
+        <div>div del adyacente</div>
+        <section>soy la seccion adyacente</section>
+        <div>hermano de los p</div>
+        <p>hermano1</p>
+        <p>hermano2</p>
+    </div>
+</body>
+</html>
