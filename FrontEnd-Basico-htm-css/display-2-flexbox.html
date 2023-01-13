@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            background: papayawhip;
+            /*controla donde se ven los elementos y que tan espaciados estan*/
+            justify-content: center;
+            /*controla la direccion del eje, es decir si es en x o en y, osea columna o fila*/
+            flex-direction: column;
+            /*centra basado en el justify y el flex direction*/
+            align-items: center;
+            height: 500px;
+        }
+        .item{
+            background: blue;
+            width: 30px;
+            height: 30px;
+        }
+        /*Selecciono el ijo item de container, pero adicional tengo la formula 2n + 1 para seleccionar los elemntos impares
+        es decir los intercalados*/
+        .container .item:nth-child(2n + 1){
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
